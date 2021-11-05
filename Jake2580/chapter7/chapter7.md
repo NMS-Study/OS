@@ -20,7 +20,7 @@
 
 <br>
 
-![MMU](C:\Users\asiat\Desktop\git\OS\Jake2580\chapter7\image\MMU.jpg)
+![MMU](/Jake2580/chapter7/image/MMU.jpg)
 
 <br>
 

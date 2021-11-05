@@ -36,7 +36,7 @@
 
 <br>
 
-![메모리 할당 방법](C:\Users\asiat\Desktop\git\OS\Jake2580\chapter7\image\메모리 할당 방법.jpg)
+![메모리 할당 방법](/Jake2580/chapter7/image/메모리_할당_방법.jpg)
 
 # 페이징
 

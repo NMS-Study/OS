@@ -25,7 +25,7 @@
         - Virtual address를 real address로 바꾸는 것을 말함
 
 
-<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter7\그림 8-1.jpg" alt="그림 8-1" style="border:1px; border-style: solid; zoom:100%;"/>
+<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter8\그림 8-1.jpg" alt="그림 8-1" style="border:1px; border-style: solid; zoom:100%;"/>
 
     - 장점 : 사용자/프로세스는 실행 프로그램 전체가 메모리에 연속적으로 적재되었다고 가정하고 실행 할 수 있음
 
@@ -37,17 +37,17 @@
         - b = block number
         - d = displacement(offset) in a block
 
-<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter7\그림 8-2.jpg" alt="그림 8-2" style="border:1px; border-style: solid; zoom:100%;"/>
+<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter8\그림 8-2.jpg" alt="그림 8-2" style="border:1px; border-style: solid; zoom:100%;"/>
 
     - Block map table(BMT)
         - Address mapping 정보 관리
             - kernel 공간에 프로세스마다 하나의 BMT를 가짐
 
-<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter7\그림 8-3.jpg" alt="그림 8-3" style="border:1px; border-style: solid; zoom:100%;"/>
+<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter8\그림 8-3.jpg" alt="그림 8-3" style="border:1px; border-style: solid; zoom:100%;"/>
 
         - Residence bit : 해당 블록이 메모리에 적재되었는지 여부 (0 또는 1)
 
-<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter7\그림 8-4.jpg" alt="그림 8-4" style="border:1px; border-style: solid; zoom:100%;"/>
+<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter8\그림 8-4.jpg" alt="그림 8-4" style="border:1px; border-style: solid; zoom:100%;"/>
 
     - Block Mapping의 흐름
         - 1. 프로세스의 BMT에 접근
@@ -82,7 +82,7 @@
             - 메모리의 분할 영역
             - Page와 같은 크기로 분할
 
-<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter7\그림 8-5.jpg" alt="그림 8-5" style="border:1px; border-style: solid; zoom:100%;"/>
+<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter8\그림 8-5.jpg" alt="그림 8-5" style="border:1px; border-style: solid; zoom:100%;"/>
 
     - 특징
         - 논리적 분할이 아님 (크기에 따른 분할)
@@ -113,7 +113,7 @@
             - Hybrid direct/associative mapping
 
 
-<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter7\그림 8-6.jpg" alt="그림 8-6" style="border:1px; border-style: solid; zoom:100%;"/>
+<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter8\그림 8-6.jpg" alt="그림 8-6" style="border:1px; border-style: solid; zoom:100%;"/>
 
 - residence bit : 올라갔는지 안올라갔는지
 - page frame number : 어디에 올라가 있는지
@@ -129,7 +129,7 @@
                 - Page size => pageSize 변수로 지정
 
 
-<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter7\그림 8-7.jpg" alt="그림 8-7" style="border:1px; border-style: solid; zoom:100%;"/>
+<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter8\그림 8-7.jpg" alt="그림 8-7" style="border:1px; border-style: solid; zoom:100%;"/>
 
 
         - Direct Mapping의 흐름
@@ -171,7 +171,7 @@
                     - 따라서 하이브리드 다이랙트 방법 생김
             
 
-<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter7\그림 8-8.jpg" alt="그림 8-8" style="border:1px; border-style: solid; zoom:100%;"/>
+<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter8\그림 8-8.jpg" alt="그림 8-8" style="border:1px; border-style: solid; zoom:100%;"/>
 
 
         - Hybrid Direct/Associative Mapping
@@ -196,7 +196,7 @@
                     - Direct mapping으로 page frame 번호 확인
                     - 해당 PMT entry를 TLB에 적재
 
-<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter7\그림 8-9.jpg" alt="그림 8-9" style="border:1px; border-style: solid; zoom:100%;"/>
+<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter8\그림 8-9.jpg" alt="그림 8-9" style="border:1px; border-style: solid; zoom:100%;"/>
 
 
 ### Memory Management
@@ -214,7 +214,7 @@
             - AV : Free list header (free list의 시작점)
 
 
-<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter7\그림 8-10.jpg" alt="그림 8-10" style="border:1px; border-style: solid; zoom:100%;"/>
+<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter8\그림 8-10.jpg" alt="그림 8-10" style="border:1px; border-style: solid; zoom:100%;"/>
 
 
 ### Page Sharing
@@ -231,16 +231,16 @@
             - Read-write data
                 - 병행성(concurrency) 제어 기법 관리하에서만 가능
 
-<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter7\그림 8-11.jpg" alt="그림 8-11" style="border:1px; border-style: solid; zoom:100%;"/>
+<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter8\그림 8-11.jpg" alt="그림 8-11" style="border:1px; border-style: solid; zoom:100%;"/>
 
-<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter7\그림 8-12.jpg" alt="그림 8-12" style="border:1px; border-style: solid; zoom:100%;"/>
+<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter8\그림 8-12.jpg" alt="그림 8-12" style="border:1px; border-style: solid; zoom:100%;"/>
 
 
     - Procedure Page Sharing의 문제와 해결법
 
-<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter7\그림 8-13.jpg" alt="그림 8-13" style="border:1px; border-style: solid; zoom:100%;"/>
+<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter8\그림 8-13.jpg" alt="그림 8-13" style="border:1px; border-style: solid; zoom:100%;"/>
 
-<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter7\그림 8-14.jpg" alt="그림 8-14" style="border:1px; border-style: solid; zoom:100%;"/>
+<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter8\그림 8-14.jpg" alt="그림 8-14" style="border:1px; border-style: solid; zoom:100%;"/>
 
 
 ### Page Protection
@@ -249,7 +249,7 @@
         - Protection bit 사용
 
 
-<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter7\그림 8-15.jpg" alt="그림 8-15" style="border:1px; border-style: solid; zoom:100%;"/>
+<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter8\그림 8-15.jpg" alt="그림 8-15" style="border:1px; border-style: solid; zoom:100%;"/>
 
 
 ### Paging System - Summary
@@ -286,7 +286,7 @@
         - No internal fragmentation
             - External fragmentation 발생 가능
 
-<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter7\그림 8-16.jpg" alt="그림 8-16" style="border:1px; border-style: solid; zoom:100%;"/>
+<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter8\그림 8-16.jpg" alt="그림 8-16" style="border:1px; border-style: solid; zoom:100%;"/>
 
     - Address mapping
         - Virtual address: v=(s,d)
@@ -298,7 +298,7 @@
             - Paging system과 유사
 
 
-<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter7\그림 8-17.jpg" alt="그림 8-17" style="border:1px; border-style: solid; zoom:100%;"/>
+<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter8\그림 8-17.jpg" alt="그림 8-17" style="border:1px; border-style: solid; zoom:100%;"/>
 
 segment length : 크기
 <br>
@@ -307,7 +307,7 @@ protection bits : 접근 권한을 나눌 수 있음
 
     - Address mapping (direct mapping)
 
-<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter7\그림 8-18.jpg" alt="그림 8-18" style="border:1px; border-style: solid; zoom:100%;"/>
+<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter8\그림 8-18.jpg" alt="그림 8-18" style="border:1px; border-style: solid; zoom:100%;"/>
 
 
     - Address mapping (direct mapping)의 흐름
@@ -331,14 +331,14 @@ protection bits : 접근 권한을 나눌 수 있음
             - Segment 적재 시, 크기에 맞추어 분할 후 적재
 
 
-<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter7\그림 8-19.jpg" alt="그림 8-19" style="border:1px; border-style: solid; zoom:100%;"/>
+<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter8\그림 8-19.jpg" alt="그림 8-19" style="border:1px; border-style: solid; zoom:100%;"/>
 
 
     - Segment sharing / protection
         - 논리적으로 분할되어 있어, 공유 및 보호가 용이함
 
 
-<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter7\그림 8-20.jpg" alt="그림 8-20" style="border:1px; border-style: solid; zoom:100%;"/>
+<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter8\그림 8-20.jpg" alt="그림 8-20" style="border:1px; border-style: solid; zoom:100%;"/>
 
 
     - Summary
@@ -353,7 +353,7 @@ protection bits : 접근 권한을 나눌 수 있음
             - 메모리 공간 및 추가적인 메모리 접근이 필요
             - 전용 HW 활용으로 해결 가능
 
-<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter7\그림 8-21.jpg" alt="그림 8-21" style="border:1px; border-style: solid; zoom:100%;"/>
+<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter8\그림 8-21.jpg" alt="그림 8-21" style="border:1px; border-style: solid; zoom:100%;"/>
 
 
 ### Hybrid Paging / Segmentation
@@ -366,7 +366,7 @@ protection bits : 접근 권한을 나눌 수 있음
 
     - Page단위로 메모리에 적재
 
-<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter7\그림 8-22.jpg" alt="그림 8-22" style="border:1px; border-style: solid; zoom:100%;"/>
+<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter8\그림 8-22.jpg" alt="그림 8-22" style="border:1px; border-style: solid; zoom:100%;"/>
 
 
     - Address mapping
@@ -386,13 +386,13 @@ protection bits : 접근 권한을 나눌 수 있음
             - FPM과 유사
 
 
-<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter7\그림 8-23.jpg" alt="그림 8-23" style="border:1px; border-style: solid; zoom:100%;"/>
+<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter8\그림 8-23.jpg" alt="그림 8-23" style="border:1px; border-style: solid; zoom:100%;"/>
 
-<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter7\그림 8-24.jpg" alt="그림 8-24" style="border:1px; border-style: solid; zoom:100%;"/>
+<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter8\그림 8-24.jpg" alt="그림 8-24" style="border:1px; border-style: solid; zoom:100%;"/>
 
-<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter7\그림 8-25.jpg" alt="그림 8-25" style="border:1px; border-style: solid; zoom:100%;"/>
+<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter8\그림 8-25.jpg" alt="그림 8-25" style="border:1px; border-style: solid; zoom:100%;"/>
 
-<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter7\그림 8-26.jpg" alt="그림 8-26" style="border:1px; border-style: solid; zoom:100%;"/>
+<img width="500" src="..\img\그림으로 배우는 구조와 원리 운영체제\Chapter8\그림 8-26.jpg" alt="그림 8-26" style="border:1px; border-style: solid; zoom:100%;"/>
 
 
     - Summary
